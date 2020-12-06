@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, Text, ttk
 from PIL import Image, ImageTk
-# from insert import insert_func
+from insert import insert_func
 # from update import update_func
 # from query import query_func
 import os
@@ -33,13 +33,16 @@ btn_box = tk.LabelFrame(frame, text='Choose the Operation',
                         fg='#213B42', bd='0', font='Helvetica 13')
 
 # button funcitons
+
+
 def insert():
-    # insert_func()
-    pass
+    insert_func()
+
 
 def update():
     # update_func()
     pass
+
 
 def query():
     # query_func()
@@ -47,9 +50,11 @@ def query():
 
 
 # buttons
-insert_btn = ttk.Button(btn_box, text='Insert',style='C.TButton', command=insert)
+insert_btn = ttk.Button(btn_box, text='Insert',
+                        style='C.TButton', command=insert)
 query_btn = ttk.Button(btn_box, text='Query', style='C.TButton', command=query)
-update_btn = ttk.Button(btn_box, text='Update',style='C.TButton', command=update)
+update_btn = ttk.Button(btn_box, text='Update',
+                        style='C.TButton', command=update)
 
 
 # //layouts-----------------
